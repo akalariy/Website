@@ -1,77 +1,70 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-
 const destinations = [
   {
-    name: 'Yosemite',
-    state: 'California',
-    image: 'https://images.unsplash.com/photo-1562310503-a918c4c61e38?auto=format&fit=crop&w=900&q=80',
-    desc: 'Waterfalls, granite cliffs, scenic hikes, and unforgettable group moments.',
+    title: 'Yosemite National Park',
+    location: 'California',
+    image: '/Images/Yosemite.avif',
+    desc: 'Granite cliffs, waterfalls, peaceful trails, and unforgettable valley views.',
   },
   {
-    name: 'Yellowstone',
-    state: 'Wyoming / Montana / Idaho',
-    image: 'https://images.unsplash.com/photo-1504598318550-17eba1008a68?auto=format&fit=crop&w=900&q=80',
-    desc: 'Geysers, wildlife, hot springs, and classic road-trip adventure energy.',
+    title: 'Yellowstone National Park',
+    location: 'Wyoming, Montana & Idaho',
+    image: '/Images/Yellowstone.avif',
+    desc: 'Geysers, wildlife, hot springs, and classic American road-trip energy.',
   },
   {
-    name: 'Glacier',
-    state: 'Montana',
-    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80',
-    desc: 'Alpine lakes, mountain views, peaceful hikes, and meaningful connections.',
+    title: 'Glacier National Park',
+    location: 'Montana',
+    image: '/Images/Glacier.avif',
+    desc: 'Turquoise lakes, mountain scenery, fresh air, and meaningful group moments.',
   },
   {
-    name: 'Zion',
-    state: 'Utah',
-    image: 'https://images.unsplash.com/photo-1539443081802-969645429d5f?auto=format&fit=crop&w=900&q=80',
-    desc: 'Red cliffs, canyon trails, sunset views, and social weekend escapes.',
+    title: 'Zion National Park',
+    location: 'Utah',
+    image: '/Images/Zion.jpeg',
+    desc: 'Red cliffs, canyon trails, desert beauty, and social weekend adventures.',
   },
   {
-    name: 'Grand Canyon',
-    state: 'Arizona',
-    image: 'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=900&q=80',
-    desc: 'Epic canyon views, sunrise moments, easy hikes, and group memories.',
+    title: 'Grand Canyon National Park',
+    location: 'Arizona',
+    image: '/Images/GrandCanyon.avif',
+    desc: 'Epic canyon views, sunrise moments, scenic hikes, and lifelong memories.',
   },
 ];
 
 export default function Destinations() {
   return (
-    <section id="destinations" className="py-28 px-6 bg-white">
+    <section id="destinations" className="py-28 bg-white px-6">
       <div className="max-w-7xl mx-auto">
-        <p className="text-center text-blue-700 font-semibold mb-3">
+        <p className="text-center text-blue-700 font-bold mb-3">
           Destinations
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-black text-center mb-5">
-          Travel within the United States
+        <h2 className="text-4xl md:text-6xl font-black text-center mb-5">
+          Travel Within the United States
         </h2>
 
-        <p className="max-w-3xl mx-auto text-center text-slate-600 mb-14 text-lg">
-          Explore iconic national parks with like-minded travelers through social group adventures.
+        <p className="text-center text-lg text-slate-600 max-w-3xl mx-auto mb-16">
+          Explore iconic destinations with like-minded travelers through social group adventures.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {destinations.map((place, idx) => (
-            <motion.div
-              key={place.name}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: idx * 0.08 }}
-              className="rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100 hover:shadow-2xl transition"
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {destinations.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl overflow-hidden bg-white shadow-xl hover:shadow-2xl transition border border-slate-100"
             >
               <img
-                src={place.image}
-                alt={place.name}
-                className="h-64 w-full object-cover"
+                src={item.image}
+                alt={item.title}
+                className="h-72 w-full object-cover"
               />
 
-              <div className="p-6 space-y-3">
-                <p className="text-blue-700 font-semibold">{place.state}</p>
-                <h3 className="text-2xl font-bold">{place.name}</h3>
-                <p className="text-slate-600">{place.desc}</p>
+              <div className="p-6">
+                <p className="text-blue-700 font-bold mb-2">{item.location}</p>
+                <h3 className="text-2xl font-black mb-3">{item.title}</h3>
+                <p className="text-slate-600">{item.desc}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

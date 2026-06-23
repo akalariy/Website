@@ -1,38 +1,25 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-
 export default function Founder() {
   return (
-    <section id="founder" className="py-28 px-6 bg-white">
-      <motion.div
-        initial={{ opacity: 0, y: 35 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        className="max-w-4xl mx-auto text-center space-y-6"
-      >
-        <p className="text-blue-700 font-semibold">Founder Story</p>
+    <section id="founder" className="py-28 bg-white px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-blue-700 font-bold mb-3">Founder Story</p>
 
-        <h2 className="text-4xl md:text-5xl font-black">
+        <h2 className="text-4xl md:text-6xl font-black mb-8">
           Why SapphireBerries Exists
         </h2>
 
-        <p className="text-lg text-slate-600">
-          SapphireBerries was created with a simple idea: travel feels more meaningful
-          when people experience it together. Many travelers want to explore beautiful
-          destinations but do not always have the right group to go with.
+        <p className="text-xl text-slate-600 mb-6">
+          SapphireBerries was created with one simple belief: travel becomes more meaningful when shared with others.
         </p>
 
-        <p className="text-lg text-slate-600">
-          Our mission is to help solo travelers and small groups discover the United
-          States, build genuine friendships, and create unforgettable memories through
-          shared adventures.
+        <p className="text-xl text-slate-600 mb-6">
+          Many people want to explore beautiful destinations across the United States, but they do not always have the right group to go with. SapphireBerries helps solo travelers and small groups connect, explore, and create unforgettable memories together.
         </p>
 
-        <p className="text-xl font-semibold text-slate-900">
+        <p className="text-2xl font-black">
           Arrive solo. Travel together. Leave as friends.
         </p>
-      </motion.div>
+      </div>
     </section>
   );
 }
