@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --surface: 120 179 206;
+  --text: 50 54 67;
+  --accent: 0 93 170;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d8ecff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005daa;
+  border-radius: 3px;
+}git config --global --list
+git config --local --list   # run inside a repo
+git config user.name        # shows effective name in current repo
+git config user.email
