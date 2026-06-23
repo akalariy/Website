@@ -20,20 +20,22 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="snap-start min-h-screen flex items-center justify-center px-6"
+      className="snap-start min-h-screen flex items-center justify-center px-6 bg-base"
     >
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 35 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="w-full max-w-xl space-y-6 text-center"
       >
-        <h2 className="text-4xl font-bold">Get in Touch</h2>
+        <p className="text-accent font-semibold">Join The Waitlist</p>
+
+        <h2 className="text-4xl font-bold">Start Your Adventure</h2>
 
         <p>
-          Interested in joining a trip, building a group, or collaborating with
-          SapphireBerries? Send us a message.
+          Interested in Yosemite, Yellowstone, Glacier, Zion, or the Grand
+          Canyon? Send a message and join the early SapphireBerries travel list.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
@@ -47,14 +49,14 @@ export default function Contact() {
           <textarea
             name="message"
             required
-            placeholder="Your message"
+            placeholder="Tell us which park you want to visit..."
             rows="5"
             className="w-full p-3 rounded-md bg-surface/40 backdrop-blur border border-surface/80"
           />
 
           <button
             type="submit"
-            className="px-6 py-3 bg-accent/80 text-white rounded-xl shadow hover:shadow-lg transition"
+            className="px-6 py-3 bg-accent text-white rounded-xl shadow hover:shadow-lg transition"
           >
             Send Message
           </button>

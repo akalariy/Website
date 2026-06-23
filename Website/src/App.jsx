@@ -1,8 +1,8 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
-import About from './components/About';
 import Trips from './components/Trips';
+import WhyUs from './components/WhyUs';
 import HowItWorks from './components/HowItWorks';
 import Founder from './components/Founder';
 import Contact from './components/Contact';
@@ -16,8 +16,8 @@ function App() {
         className="flex-1 overflow-y-scroll h-screen snap-y snap-proximity scroll-smooth"
       >
         <Hero />
-        <About />
         <Trips />
+        <WhyUs />
         <HowItWorks />
         <Founder />
         <Contact />

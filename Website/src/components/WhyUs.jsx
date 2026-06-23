@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import {
   FaHome,
+  FaInfoCircle,
   FaPlaneDeparture,
-  FaHeart,
   FaUsers,
   FaUserTie,
   FaEnvelope,
@@ -11,8 +11,8 @@ import {
 
 const iconMap = {
   hero: <FaHome />,
+  about: <FaInfoCircle />,
   trips: <FaPlaneDeparture />,
-  'why-us': <FaHeart />,
   'how-it-works': <FaUsers />,
   founder: <FaUserTie />,
   contact: <FaEnvelope />,
@@ -20,8 +20,8 @@ const iconMap = {
 
 const sections = [
   'hero',
+  'about',
   'trips',
-  'why-us',
   'how-it-works',
   'founder',
   'contact',
