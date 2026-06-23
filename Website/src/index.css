@@ -33,7 +33,4 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #005daa;
   border-radius: 3px;
-}git config --global --list
-git config --local --list   # run inside a repo
-git config user.name        # shows effective name in current repo
-git config user.email
+}
