@@ -1,26 +1,19 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Trips from './components/Trips';
-import WhyUs from './components/WhyUs';
+import Destinations from './components/Destinations';
 import HowItWorks from './components/HowItWorks';
 import Founder from './components/Founder';
-import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="flex">
-      <Sidebar />
-      <main
-        id="main-scroll"
-        className="flex-1 overflow-y-scroll h-screen snap-y snap-proximity scroll-smooth"
-      >
+    <div className="min-h-screen bg-white text-slate-900">
+      <Navbar />
+      <main>
         <Hero />
-        <Trips />
-        <WhyUs />
+        <Destinations />
         <HowItWorks />
         <Founder />
-        <Contact />
       </main>
     </div>
   );
