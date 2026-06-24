@@ -5,6 +5,17 @@ const facilities = [
   'Sleeping bags'
 ];
 
+const ageGroups = [
+  '18–25',
+  '25–35',
+  '35+'
+];
+
+const genderGroups = [
+  'Male',
+  'Female'
+];
+
 const tripData = {
   yosemite: {
     title: 'Yosemite Social Escape',
@@ -389,6 +400,30 @@ export default function TripDetails({ trip, onBack }) {
           {facilities.map((item) => (
             <div key={item} className="p-4 bg-slate-50 rounded-xl text-center font-bold">
               {item}
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-3xl md:text-4xl font-black mb-6">
+          Age Groups
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-4 mb-12">
+          {ageGroups.map((group) => (
+            <div key={group} className="p-4 bg-slate-50 rounded-xl text-center font-bold">
+              {group}
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-3xl md:text-4xl font-black mb-6">
+          Gender
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-4 mb-12">
+          {genderGroups.map((group) => (
+            <div key={group} className="p-4 bg-slate-50 rounded-xl text-center font-bold">
+              {group}
             </div>
           ))}
         </div>
