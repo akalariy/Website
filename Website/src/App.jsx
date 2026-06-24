@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Destinations from './components/Destinations';
 import HowItWorks from './components/HowItWorks';
-import Founder from './components/Founder';
+import Contact from './components/Contact';
 import TripDetails from './components/TripDetails';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
         <Hero />
         <Destinations onSelectTrip={setSelectedTrip} />
         <HowItWorks />
-        <Founder />
+        <Contact />
       </main>
     </div>
   );
