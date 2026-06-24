@@ -9,7 +9,7 @@ export default function Contact() {
         <p className="text-2xl md:text-3xl text-slate-700 mb-10 leading-relaxed">
           SapphireBerries was created with a simple mission
           <br />
-          help people explore together and make new friends.
+          help people explore the world together and build lifelong friendships along the way.
         </p>
 
         <p className="text-xl md:text-2xl font-semibold text-slate-900">

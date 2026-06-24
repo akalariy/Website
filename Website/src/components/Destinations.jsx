@@ -50,7 +50,7 @@ export default function Destinations({ onSelectTrip }) {
         </p>
 
         <h2 className="text-4xl md:text-6xl font-black text-center mb-5">
-          Travel Within the United States
+          Featured Adventures
         </h2>
 
         <p className="text-center text-lg text-slate-600 max-w-3xl mx-auto mb-16">
@@ -70,13 +70,9 @@ export default function Destinations({ onSelectTrip }) {
               />
 
               <div className="p-6">
-                <p className="text-blue-700 font-bold mb-2">
-                  {item.location}
-                </p>
+                <p className="text-blue-700 font-bold mb-2">{item.location}</p>
 
-                <h3 className="text-2xl font-black mb-5">
-                  {item.title}
-                </h3>
+                <h3 className="text-2xl font-black mb-5">{item.title}</h3>
 
                 <div className="mb-6">
                   <p className="text-lg font-black text-slate-900">
