@@ -1,10 +1,8 @@
 const facilities = [
   'Round-trip travel',
-  'Water during the trip',
   'Food and meals',
   'Camp facilities',
-  'Sleeping bags',
-  'No smoking and no drinking during the trip',
+  'Sleeping bags'
 ];
 
 const tripData = {
