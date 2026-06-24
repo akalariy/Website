@@ -1,22 +1,30 @@
 const steps = [
   {
-    title: 'Choose a Destination',
-    desc: 'Pick a United States adventure like Yosemite, Yellowstone, Glacier, Zion, or the Grand Canyon.',
+    title: 'Reserve Your Spot',
+    desc: 'Travelers select a destination and reserve a seat for the group trip.',
   },
   {
-    title: 'Meet Like-Minded Travelers',
-    desc: 'Connect with solo travelers and small groups who also want to explore and make new friends.',
+    title: 'Board From Nearby Cities',
+    desc: 'A charter bus picks up travelers from selected cities near the national park route.',
+  },
+  {
+    title: 'Arrive at Base Camp',
+    desc: 'The group reaches the base camp, settles in, joins a welcome meetup, and connects around a campfire.',
   },
   {
     title: 'Explore Together',
-    desc: 'Travel as a group, share experiences, build friendships, and create memories that last beyond the trip.',
+    desc: 'Over 3–4 days, the group enjoys planned hikes, scenic tours, photos, meals, and social activities.',
+  },
+  {
+    title: 'Return Together',
+    desc: 'After the adventure, the bus drops travelers back at their original pickup locations.',
   },
 ];
 
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="py-28 bg-slate-50 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <p className="text-center text-blue-700 font-bold mb-3">
           Simple Process
         </p>
@@ -25,14 +33,14 @@ export default function HowItWorks() {
           How It Works
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
           {steps.map((step, index) => (
-            <div key={step.title} className="bg-white p-8 rounded-2xl shadow-lg">
+            <div key={step.title} className="bg-white p-7 rounded-2xl shadow-lg">
               <div className="w-14 h-14 rounded-full bg-blue-700 text-white flex items-center justify-center text-xl font-black mb-6">
                 {index + 1}
               </div>
 
-              <h3 className="text-2xl font-black mb-4">{step.title}</h3>
+              <h3 className="text-xl font-black mb-4">{step.title}</h3>
               <p className="text-slate-600">{step.desc}</p>
             </div>
           ))}
