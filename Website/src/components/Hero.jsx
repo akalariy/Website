@@ -10,10 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/55" />
 
       <div className="relative z-10 text-center px-6 max-w-5xl">
-        <p className="font-semibold tracking-widest mb-5">
-          UNITED STATES SOCIAL ADVENTURES
-        </p>
-
+        
         <h1 className="text-5xl md:text-8xl font-black leading-tight mb-6">
           Explore together.
           <br />
