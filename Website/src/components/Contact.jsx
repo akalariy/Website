@@ -7,7 +7,7 @@ export default function Contact() {
         </h2>
 
         <p className="text-2xl md:text-3xl text-slate-700 mb-10 leading-relaxed">
-          SapphireBerries was created with a simple mission:
+          SapphireBerries was created with a simple mission
           <br />
           help people explore together and make new friends.
         </p>
