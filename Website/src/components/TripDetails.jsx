@@ -5,7 +5,6 @@ const tripData = {
     location: 'California',
     image: '/Images/Yosemite.avif',
     duration: '3 Days / 2 Nights',
-    bestFor: 'Solo travelers, friends, students, young professionals',
     style: 'Nature, hiking, photography, social bonding',
     overview:
       'A social group adventure through Yosemite’s waterfalls, granite cliffs, valley views, peaceful trails, and unforgettable friendship moments.',
@@ -49,7 +48,6 @@ const tripData = {
     location: 'Wyoming, Montana & Idaho',
     image: '/Images/Yellowstone.avif',
     duration: '4 Days / 3 Nights',
-    bestFor: 'Road-trip lovers, wildlife watchers, nature explorers',
     style: 'Geysers, wildlife, scenic drives, social adventure',
     overview:
       'A group adventure through America’s first national park, featuring geysers, hot springs, wildlife, scenic drives, and unforgettable road-trip energy.',
@@ -101,7 +99,6 @@ const tripData = {
     location: 'Montana',
     image: '/Images/Glacier.avif',
     duration: '4 Days / 3 Nights',
-    bestFor: 'Mountain lovers, hikers, photographers, peaceful travelers',
     style: 'Alpine lakes, mountains, scenic drives, group bonding',
     overview:
       'A peaceful social adventure through Glacier’s turquoise lakes, mountain views, scenic roads, fresh air, and meaningful group moments.',
@@ -153,7 +150,6 @@ const tripData = {
     location: 'Utah',
     image: '/Images/Zion.jpeg',
     duration: '3 Days / 2 Nights',
-    bestFor: 'Weekend travelers, canyon lovers, hikers, social groups',
     style: 'Red cliffs, canyon trails, desert views, weekend adventure',
     overview:
       'A social weekend escape through Zion’s red cliffs, canyon trails, desert beauty, scenic viewpoints, and group adventure moments.',
@@ -195,7 +191,6 @@ const tripData = {
     location: 'Arizona',
     image: '/Images/GrandCanyon.avif',
     duration: '3 Days / 2 Nights',
-    bestFor: 'First-time park travelers, photographers, easy hikers',
     style: 'Sunrise views, canyon walks, road trip, social bonding',
     overview:
       'A memorable group journey through one of the world’s most iconic landscapes, filled with canyon views, sunrise moments, easy hikes, and friendship-building experiences.',
@@ -272,19 +267,14 @@ export default function TripDetails({ trip, onBack }) {
           {data.overview}
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           <div className="p-6 bg-slate-50 rounded-2xl shadow">
             <h3 className="font-black text-xl mb-2">Duration</h3>
             <p>{data.duration}</p>
-          </div>
+        </div>
 
-          <div className="p-6 bg-slate-50 rounded-2xl shadow">
-            <h3 className="font-black text-xl mb-2">Best For</h3>
-            <p>{data.bestFor}</p>
-          </div>
-
-          <div className="p-6 bg-slate-50 rounded-2xl shadow">
-            <h3 className="font-black text-xl mb-2">Trip Style</h3>
+        <div className="p-6 bg-slate-50 rounded-2xl shadow">
+           <h3 className="font-black text-xl mb-2">Trip Style</h3>
             <p>{data.style}</p>
           </div>
         </div>
