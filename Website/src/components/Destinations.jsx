@@ -4,35 +4,40 @@ const destinations = [
     title: 'Yosemite National Park',
     location: 'California',
     image: '/Images/Yosemite.avif',
-    desc: 'Granite cliffs, waterfalls, peaceful trails, and unforgettable valley views.',
+    duration: '3 Days',
+    price: '$499',
   },
   {
     slug: 'yellowstone',
     title: 'Yellowstone National Park',
     location: 'Wyoming, Montana & Idaho',
     image: '/Images/Yellowstone.avif',
-    desc: 'Geysers, wildlife, hot springs, and classic American road-trip energy.',
+    duration: '4 Days',
+    price: '$899',
   },
   {
     slug: 'glacier',
     title: 'Glacier National Park',
     location: 'Montana',
     image: '/Images/Glacier.avif',
-    desc: 'Turquoise lakes, mountain scenery, fresh air, and meaningful group moments.',
+    duration: '4 Days',
+    price: '$799',
   },
   {
     slug: 'zion',
     title: 'Zion National Park',
     location: 'Utah',
     image: '/Images/Zion.jpeg',
-    desc: 'Red cliffs, canyon trails, desert beauty, and social weekend adventures.',
+    duration: '3 Days',
+    price: '$549',
   },
   {
     slug: 'grand-canyon',
     title: 'Grand Canyon National Park',
     location: 'Arizona',
     image: '/Images/GrandCanyon.avif',
-    desc: 'Epic canyon views, sunrise moments, scenic hikes, and lifelong memories.',
+    duration: '3 Days',
+    price: '$499',
   },
 ];
 
@@ -66,8 +71,17 @@ export default function Destinations({ onSelectTrip }) {
 
               <div className="p-6">
                 <p className="text-blue-700 font-bold mb-2">{item.location}</p>
-                <h3 className="text-2xl font-black mb-3">{item.title}</h3>
-                <p className="text-slate-600 mb-5">{item.desc}</p>
+
+                <h3 className="text-2xl font-black mb-5">{item.title}</h3>
+
+                <div className="mb-6">
+                  <p className="text-xl font-black text-slate-900">
+                    {item.duration}
+                  </p>
+                  <p className="text-blue-700 font-bold">
+                    From {item.price}
+                  </p>
+                </div>
 
                 <button
                   onClick={() => onSelectTrip(item.slug)}
