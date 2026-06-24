@@ -1,3 +1,12 @@
+const facilities = [
+  'Round-trip travel',
+  'Water during the trip',
+  'Food and meals',
+  'Camp facilities',
+  'Sleeping bags',
+  'No smoking and no drinking during the trip',
+];
+
 const tripData = {
   yosemite: {
     title: 'Yosemite Social Escape',
@@ -374,6 +383,28 @@ export default function TripDetails({ trip, onBack }) {
           ))}
         </div>
 
+        <h2 className="text-3xl md:text-4xl font-black mb-6">
+          Facilities Included
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-4 mb-12">
+          {facilities.map((item) => (
+            <div key={item} className="p-4 bg-slate-50 rounded-xl text-center font-bold">
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <div className="mb-12 p-6 bg-red-50 border border-red-100 rounded-2xl">
+          <h3 className="text-2xl font-black text-red-700 mb-3">
+            Trip Rule
+          </h3>
+          <p className="text-slate-700 text-lg">
+            To keep the trip safe, respectful, and comfortable for everyone,
+            smoking and drinking are not allowed during the trip.
+          </p>
+        </div>
+
         <h2 className="text-3xl md:text-4xl font-black mb-8">
           Detailed Round-Trip Itinerary
         </h2>
@@ -390,19 +421,6 @@ export default function TripDetails({ trip, onBack }) {
               </ul>
             </div>
           ))}
-        </div>
-
-        <h2 className="text-3xl md:text-4xl font-black mt-14 mb-6">
-          What Makes This Trip Special
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-4 text-slate-700">
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Round-trip group travel</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Pickup from nearby cities</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Base camp social experience</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Planned hikes and scenic tours</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Campfire-style group bonding</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Explore together and make new friends</div>
         </div>
       </div>
     </section>
