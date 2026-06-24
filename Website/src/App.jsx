@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Destinations from './components/Destinations';
@@ -8,9 +8,41 @@ import TripDetails from './components/TripDetails';
 
 function App() {
   const [selectedTrip, setSelectedTrip] = useState(null);
+  const previousScrollPosition = useRef(0);
+
+  useEffect(() => {
+    const handleBrowserBack = (event) => {
+      if (event.state && event.state.trip) {
+        setSelectedTrip(event.state.trip);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 0);
+      } else {
+        setSelectedTrip(null);
+        setTimeout(() => {
+          window.scrollTo(0, previousScrollPosition.current);
+        }, 0);
+      }
+    };
+
+    window.addEventListener('popstate', handleBrowserBack);
+
+    return () => {
+      window.removeEventListener('popstate', handleBrowserBack);
+    };
+  }, []);
 
   const openTrip = (trip) => {
+    previousScrollPosition.current = window.scrollY;
+
+    window.history.pushState(
+      { trip },
+      '',
+      `#${trip}`
+    );
+
     setSelectedTrip(trip);
+
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 0);
@@ -18,8 +50,13 @@ function App() {
 
   const closeTrip = () => {
     setSelectedTrip(null);
+
+    if (window.location.hash) {
+      window.history.pushState(null, '', window.location.pathname);
+    }
+
     setTimeout(() => {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, previousScrollPosition.current);
     }, 0);
   };
 
