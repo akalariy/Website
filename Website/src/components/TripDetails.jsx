@@ -12,7 +12,7 @@ const tripData = {
     location: 'California',
     image: '/Images/Yosemite.avif',
     duration: '4 Days • 3 Nights',
-    price: '$599',
+    price: 'Pricing Yet To Be Announced',
     style: 'Nature, hiking, waterfalls, photography, social bonding',
     pickupCities: ['San Francisco', 'Oakland', 'San Jose', 'Sacramento', 'Fresno'],
     overview:
@@ -65,7 +65,7 @@ const tripData = {
     location: 'Wyoming, Montana & Idaho',
     image: '/Images/Yellowstone.avif',
     duration: '6 Days • 5 Nights',
-    price: '$999',
+    price: 'Pricing Yet To Be Announced',
     style: 'Geysers, wildlife, scenic drives, road trip, social adventure',
     pickupCities: ['Salt Lake City', 'Boise', 'Idaho Falls', 'Billings'],
     overview:
@@ -135,7 +135,7 @@ const tripData = {
     location: 'Montana',
     image: '/Images/Glacier.avif',
     duration: '6 Days • 5 Nights',
-    price: '$949',
+    price: 'Pricing Yet To Be Announced',
     style: 'Mountains, lakes, scenic drives, hiking, group bonding',
     pickupCities: ['Spokane', 'Missoula', 'Kalispell', 'Calgary'],
     overview:
@@ -204,7 +204,7 @@ const tripData = {
     location: 'Utah',
     image: '/Images/Zion.jpeg',
     duration: '5 Days • 4 Nights',
-    price: '$699',
+    price: 'Pricing Yet To Be Announced',
     style: 'Canyons, hiking, desert views, social weekend adventure',
     pickupCities: ['Phoenix', 'Las Vegas', 'St. George', 'Salt Lake City'],
     overview:
@@ -264,7 +264,7 @@ const tripData = {
     location: 'Arizona',
     image: '/Images/GrandCanyon.avif',
     duration: '4 Days • 3 Nights',
-    price: '$599',
+    price: 'Pricing Yet To Be Announced',
     style: 'Sunrise views, canyon walks, photography, social bonding',
     pickupCities: ['Phoenix', 'Tucson', 'Flagstaff', 'Las Vegas'],
     overview:
@@ -360,7 +360,7 @@ export default function TripDetails({ trip, onBack }) {
 
           <div className="p-6 bg-slate-50 rounded-2xl shadow">
             <h3 className="font-black text-xl mb-2">Price</h3>
-            <p>{data.price}</p>
+            <p className="font-semibold text-slate-700">{data.price}</p>
           </div>
 
           <div className="p-6 bg-slate-50 rounded-2xl shadow">
@@ -391,16 +391,6 @@ export default function TripDetails({ trip, onBack }) {
               {item}
             </div>
           ))}
-        </div>
-
-        <div className="mb-12 p-6 bg-red-50 border border-red-100 rounded-2xl">
-          <h3 className="text-2xl font-black text-red-700 mb-3">
-            Trip Rule
-          </h3>
-          <p className="text-slate-700 text-lg">
-            To keep the trip safe, respectful, and comfortable for everyone,
-            smoking and drinking are not allowed during the trip.
-          </p>
         </div>
 
         <h2 className="text-3xl md:text-4xl font-black mb-8">
