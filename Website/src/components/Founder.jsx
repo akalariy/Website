@@ -9,15 +9,19 @@ export default function Founder() {
         </h2>
 
         <p className="text-xl text-slate-600 mb-6">
-          SapphireBerries was created with one simple belief: travel becomes more meaningful when shared with others.
+          SapphireBerries was created with a simple mission: help people explore together and make new friends.
         </p>
 
         <p className="text-xl text-slate-600 mb-6">
-          Many people want to explore beautiful destinations across the United States, but they do not always have the right group to go with. SapphireBerries helps solo travelers and small groups connect, explore, and create unforgettable memories together.
+          Many people want to travel, but they may not have the right group to go with. SapphireBerries brings solo travelers and small groups together for meaningful adventures across the United States.
+        </p>
+
+        <p className="text-xl text-slate-600 mb-6">
+          The destination is important, but the real value is the connection, confidence, and memories people build along the way.
         </p>
 
         <p className="text-2xl font-black">
-          Arrive solo. Travel together. Leave as friends.
+          Explore together. Make new friends.
         </p>
       </div>
     </section>

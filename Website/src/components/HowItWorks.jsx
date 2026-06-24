@@ -4,12 +4,12 @@ const steps = [
     desc: 'Pick a United States adventure like Yosemite, Yellowstone, Glacier, Zion, or the Grand Canyon.',
   },
   {
-    title: 'Join a Social Group',
-    desc: 'Connect with solo travelers and small groups who want to explore together.',
+    title: 'Meet Like-Minded Travelers',
+    desc: 'Connect with solo travelers and small groups who also want to explore and make new friends.',
   },
   {
-    title: 'Travel Together',
-    desc: 'Experience beautiful places, shared memories, new friendships, and meaningful adventures.',
+    title: 'Explore Together',
+    desc: 'Travel as a group, share experiences, build friendships, and create memories that last beyond the trip.',
   },
 ];
 

@@ -317,7 +317,7 @@ export default function TripDetails({ trip, onBack }) {
           <div className="p-4 bg-slate-50 rounded-xl">✓ Beginner-friendly planning</div>
           <div className="p-4 bg-slate-50 rounded-xl">✓ Group photo moments</div>
           <div className="p-4 bg-slate-50 rounded-xl">✓ New travel friendships</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Community-driven adventure</div>
+          <div className="p-4 bg-slate-50 rounded-xl">✓ Explore together and make new friends</div>
         </div>
       </div>
     </section>

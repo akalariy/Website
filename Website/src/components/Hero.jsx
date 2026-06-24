@@ -3,7 +3,7 @@ export default function Hero() {
     <section id="home" className="relative h-screen flex items-center justify-center text-white">
       <img
         src="/Images/Main.avif"
-        alt="United States road trip"
+        alt="United States adventure"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -15,13 +15,13 @@ export default function Hero() {
         </p>
 
         <h1 className="text-5xl md:text-8xl font-black leading-tight mb-6">
-          Arrive solo,
+          Explore together.
           <br />
-          leave as friends
+          Make new friends.
         </h1>
 
         <p className="text-xl md:text-2xl mb-8">
-          Curated group adventures across America’s most iconic destinations.
+          SapphireBerries helps travelers discover beautiful places across the United States while connecting with like-minded people.
         </p>
 
         <a
