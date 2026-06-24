@@ -4,39 +4,49 @@ const tripData = {
     park: 'Yosemite National Park',
     location: 'California',
     image: '/Images/Yosemite.avif',
-    duration: '3 Days / 2 Nights',
-    style: 'Nature, hiking, photography, social bonding',
+    duration: '4 Days • 3 Nights',
+    price: '$599',
+    style: 'Nature, hiking, waterfalls, photography, social bonding',
+    pickupCities: ['San Francisco', 'Oakland', 'San Jose', 'Sacramento', 'Fresno'],
     overview:
-      'A social group adventure through Yosemite’s waterfalls, granite cliffs, valley views, peaceful trails, and unforgettable friendship moments.',
+      'A round-trip social adventure to Yosemite with pickup options from major California cities, base camp arrival, group bonding, scenic viewpoints, hikes, and shared experiences.',
     days: [
       {
-        title: 'Day 1: Arrival & Yosemite Valley Welcome',
+        title: 'Day 1: City Pickups & Yosemite Base Camp Arrival',
         points: [
-          'Group arrival and introductions.',
-          'Drive into Yosemite Valley.',
-          'Visit Tunnel View for first group photos.',
-          'Explore Yosemite Falls area.',
-          'Evening group dinner and icebreaker meetup.',
+          'Morning pickups from San Francisco, Oakland, San Jose, Sacramento, and Fresno.',
+          'Scenic group ride toward Yosemite National Park.',
+          'Arrive near base camp and settle in.',
+          'Welcome meetup with group introductions.',
+          'Evening dinner and campfire social.',
         ],
       },
       {
-        title: 'Day 2: Scenic Hikes, Views & Group Adventure',
+        title: 'Day 2: Yosemite Valley Highlights',
         points: [
-          'Morning coffee and group breakfast.',
-          'Easy-to-moderate Yosemite Valley hike.',
+          'Breakfast with the group.',
+          'Visit Tunnel View for iconic Yosemite photos.',
+          'Explore Yosemite Valley, El Capitan, and Yosemite Falls.',
+          'Group lunch and scenic photo stops.',
+          'Evening social activities at base camp.',
+        ],
+      },
+      {
+        title: 'Day 3: Hiking, Views & Group Experience',
+        points: [
+          'Morning hike or scenic walk based on group comfort.',
           'Visit Mirror Lake or Mist Trail area depending on season.',
-          'Picnic-style lunch with the group.',
+          'Relaxed picnic-style lunch.',
           'Sunset viewpoint experience.',
-          'Casual group hangout in the evening.',
+          'Final campfire gathering and group bonding.',
         ],
       },
       {
-        title: 'Day 3: Final Views & Departure',
+        title: 'Day 4: Final Photos & Return Trip',
         points: [
-          'Slow morning and final group photos.',
-          'Optional short scenic walk.',
-          'Friendship exchange and travel community connection.',
-          'Departure from Yosemite.',
+          'Breakfast and final group photos.',
+          'Pack up and depart from Yosemite.',
+          'Bus returns travelers to original pickup cities.',
         ],
       },
     ],
@@ -47,47 +57,66 @@ const tripData = {
     park: 'Yellowstone National Park',
     location: 'Wyoming, Montana & Idaho',
     image: '/Images/Yellowstone.avif',
-    duration: '4 Days / 3 Nights',
-    style: 'Geysers, wildlife, scenic drives, social adventure',
+    duration: '6 Days • 5 Nights',
+    price: '$999',
+    style: 'Geysers, wildlife, scenic drives, road trip, social adventure',
+    pickupCities: ['Salt Lake City', 'Boise', 'Idaho Falls', 'Billings'],
     overview:
-      'A group adventure through America’s first national park, featuring geysers, hot springs, wildlife, scenic drives, and unforgettable road-trip energy.',
+      'A longer round-trip adventure designed for travelers from nearby regional cities, featuring Yellowstone’s geysers, wildlife, scenic drives, and group travel energy.',
     days: [
       {
-        title: 'Day 1: Arrival & Group Welcome',
+        title: 'Day 1: Regional Pickups & Travel Toward Yellowstone',
         points: [
-          'Arrive near Yellowstone and meet the group.',
-          'Welcome dinner and trip orientation.',
-          'Short scenic drive depending on arrival time.',
-          'Group introductions and travel expectations.',
+          'Pickups from Salt Lake City, Boise, Idaho Falls, and Billings depending on route.',
+          'Group travel toward the Yellowstone region.',
+          'Rest stops, introductions, and road-trip bonding.',
+          'Overnight stay near the park route.',
         ],
       },
       {
-        title: 'Day 2: Old Faithful & Geothermal Wonders',
+        title: 'Day 2: Base Camp Arrival & Welcome Meetup',
+        points: [
+          'Continue travel toward Yellowstone base area.',
+          'Arrive, check in, and settle at base camp.',
+          'Welcome dinner and trip orientation.',
+          'Evening group meetup.',
+        ],
+      },
+      {
+        title: 'Day 3: Old Faithful & Geothermal Wonders',
         points: [
           'Visit Old Faithful geyser.',
           'Explore Upper Geyser Basin.',
-          'Stop at Grand Prismatic Spring viewpoint.',
+          'Stop near Grand Prismatic Spring viewpoint.',
           'Group lunch and scenic photo stops.',
-          'Evening group hangout.',
+          'Evening hangout with the group.',
         ],
       },
       {
-        title: 'Day 3: Wildlife & Canyon Views',
+        title: 'Day 4: Wildlife & Canyon Views',
         points: [
           'Early morning wildlife drive.',
           'Visit Hayden Valley or Lamar Valley depending on route.',
           'Explore Grand Canyon of the Yellowstone.',
           'Stop at waterfalls and viewpoints.',
-          'Final group dinner.',
+          'Group dinner and social evening.',
         ],
       },
       {
-        title: 'Day 4: Scenic Exit & Departure',
+        title: 'Day 5: Yellowstone Lake & Final Adventure Day',
         points: [
-          'Relaxed breakfast.',
-          'Optional final viewpoint stop.',
-          'Group photos and contact exchange.',
-          'Departure from Yellowstone area.',
+          'Visit Yellowstone Lake area.',
+          'Short scenic trails and viewpoints.',
+          'Relaxed group time and photography stops.',
+          'Final campfire-style social or group dinner.',
+        ],
+      },
+      {
+        title: 'Day 6: Return Trip',
+        points: [
+          'Breakfast and checkout.',
+          'Depart Yellowstone region.',
+          'Bus returns travelers to their original pickup cities.',
         ],
       },
     ],
@@ -98,28 +127,29 @@ const tripData = {
     park: 'Glacier National Park',
     location: 'Montana',
     image: '/Images/Glacier.avif',
-    duration: '4 Days / 3 Nights',
-    style: 'Alpine lakes, mountains, scenic drives, group bonding',
+    duration: '6 Days • 5 Nights',
+    price: '$949',
+    style: 'Mountains, lakes, scenic drives, hiking, group bonding',
+    pickupCities: ['Spokane', 'Missoula', 'Kalispell', 'Calgary'],
     overview:
-      'A peaceful social adventure through Glacier’s turquoise lakes, mountain views, scenic roads, fresh air, and meaningful group moments.',
+      'A peaceful round-trip adventure to Glacier National Park with regional pickups, alpine lakes, mountain scenery, base camp bonding, and unforgettable group moments.',
     days: [
       {
-        title: 'Day 1: Arrival in Montana',
+        title: 'Day 1: Regional Pickups & Travel',
         points: [
-          'Group arrival and introductions.',
-          'Check in near Glacier National Park.',
-          'Welcome dinner and social meetup.',
-          'Trip briefing and route overview.',
+          'Pickups from Spokane, Missoula, Kalispell, and Calgary depending on route.',
+          'Group travel toward Glacier National Park.',
+          'Introductions and travel bonding during the ride.',
+          'Overnight near the route or Glacier area.',
         ],
       },
       {
-        title: 'Day 2: Lakes & Scenic Views',
+        title: 'Day 2: Base Camp Arrival & Lake McDonald',
         points: [
-          'Visit Lake McDonald.',
-          'Scenic photo stops around the park.',
-          'Easy group walk or lakeside trail.',
-          'Picnic-style lunch.',
-          'Evening group reflection and hangout.',
+          'Arrive near Glacier National Park.',
+          'Settle into base camp or lodging.',
+          'Visit Lake McDonald for scenic views.',
+          'Welcome dinner and group meetup.',
         ],
       },
       {
@@ -127,18 +157,35 @@ const tripData = {
         points: [
           'Drive Going-to-the-Sun Road if open.',
           'Stop at Logan Pass area.',
-          'Short hike depending on weather and group comfort.',
-          'Explore mountain viewpoints.',
-          'Final group dinner.',
+          'Short scenic hikes depending on weather.',
+          'Mountain viewpoints and group photos.',
+          'Evening social time.',
         ],
       },
       {
-        title: 'Day 4: Farewell & Departure',
+        title: 'Day 4: Lakes, Trails & Nature Time',
         points: [
-          'Slow morning breakfast.',
-          'Final lakeside photos.',
-          'Friendship exchange.',
-          'Departure from Glacier area.',
+          'Explore lakeside trails and viewpoints.',
+          'Picnic-style group lunch.',
+          'Optional easy hike or relaxed scenic walk.',
+          'Campfire-style group gathering.',
+        ],
+      },
+      {
+        title: 'Day 5: Final Glacier Adventure Day',
+        points: [
+          'Flexible exploration day based on weather and group interest.',
+          'Photography stops and scenic viewpoints.',
+          'Final group dinner.',
+          'Friendship exchange and community bonding.',
+        ],
+      },
+      {
+        title: 'Day 6: Return Trip',
+        points: [
+          'Breakfast and checkout.',
+          'Depart Glacier region.',
+          'Bus returns travelers to their original pickup cities.',
         ],
       },
     ],
@@ -149,37 +196,56 @@ const tripData = {
     park: 'Zion National Park',
     location: 'Utah',
     image: '/Images/Zion.jpeg',
-    duration: '3 Days / 2 Nights',
-    style: 'Red cliffs, canyon trails, desert views, weekend adventure',
+    duration: '5 Days • 4 Nights',
+    price: '$699',
+    style: 'Canyons, hiking, desert views, social weekend adventure',
+    pickupCities: ['Phoenix', 'Las Vegas', 'St. George', 'Salt Lake City'],
     overview:
-      'A social weekend escape through Zion’s red cliffs, canyon trails, desert beauty, scenic viewpoints, and group adventure moments.',
+      'A social round-trip Zion adventure designed to include travelers from Phoenix, Las Vegas, St. George, and Salt Lake City with enough time for travel, hikes, campfire bonding, and return.',
     days: [
       {
-        title: 'Day 1: Arrival & Springdale Welcome',
+        title: 'Day 1: Phoenix & Regional Pickups',
         points: [
-          'Arrive near Zion National Park.',
-          'Group introductions and welcome dinner.',
-          'Sunset walk or viewpoint stop.',
-          'Trip briefing and social meetup.',
+          'Early pickup from Phoenix for long-distance travelers.',
+          'Additional pickups from Las Vegas, St. George, and Salt Lake City depending on route.',
+          'Travel toward Zion region with rest stops.',
+          'Arrive near base camp and settle in.',
+          'Welcome dinner and group introductions.',
         ],
       },
       {
-        title: 'Day 2: Zion Canyon Adventure',
+        title: 'Day 2: Zion Canyon Introduction',
         points: [
+          'Breakfast with the group.',
           'Enter Zion Canyon early.',
           'Explore Riverside Walk or Emerald Pools.',
-          'Optional Angels Landing viewpoint area depending on permits and safety.',
           'Group lunch in Springdale or picnic style.',
-          'Sunset canyon photo stop.',
+          'Sunset viewpoint and evening social.',
         ],
       },
       {
-        title: 'Day 3: Final Trail & Departure',
+        title: 'Day 3: Signature Zion Hiking Day',
         points: [
-          'Morning coffee and casual group breakfast.',
-          'Short scenic trail or viewpoint.',
-          'Group photos and contact exchange.',
-          'Departure from Zion.',
+          'Optional Angels Landing viewpoint area depending on permits and safety.',
+          'Alternative group-friendly hikes available.',
+          'Scenic canyon photography stops.',
+          'Group dinner and campfire-style gathering.',
+        ],
+      },
+      {
+        title: 'Day 4: Narrows / Scenic Adventure Day',
+        points: [
+          'Explore The Narrows area depending on weather and conditions.',
+          'Relaxed scenic drive and group activities.',
+          'Final social night with group reflections and photos.',
+        ],
+      },
+      {
+        title: 'Day 5: Return Trip',
+        points: [
+          'Breakfast and checkout.',
+          'Depart Zion region.',
+          'Drop-offs at St. George, Las Vegas, Salt Lake City, and Phoenix depending on route.',
         ],
       },
     ],
@@ -190,37 +256,49 @@ const tripData = {
     park: 'Grand Canyon National Park',
     location: 'Arizona',
     image: '/Images/GrandCanyon.avif',
-    duration: '3 Days / 2 Nights',
-    style: 'Sunrise views, canyon walks, road trip, social bonding',
+    duration: '4 Days • 3 Nights',
+    price: '$599',
+    style: 'Sunrise views, canyon walks, photography, social bonding',
+    pickupCities: ['Phoenix', 'Tucson', 'Flagstaff', 'Las Vegas'],
     overview:
-      'A memorable group journey through one of the world’s most iconic landscapes, filled with canyon views, sunrise moments, easy hikes, and friendship-building experiences.',
+      'A round-trip Grand Canyon social adventure with pickup options from major Arizona and Nevada cities, designed for sunrise views, canyon walks, group photos, and meaningful travel connections.',
     days: [
       {
-        title: 'Day 1: Arrival & Sunset Canyon Welcome',
+        title: 'Day 1: City Pickups & Canyon Arrival',
         points: [
-          'Arrive near Grand Canyon South Rim.',
-          'Group introductions and welcome dinner.',
-          'Visit a sunset viewpoint.',
-          'Casual evening group meetup.',
+          'Pickups from Phoenix, Tucson, Flagstaff, and Las Vegas depending on route.',
+          'Travel toward Grand Canyon South Rim.',
+          'Arrive near base camp or lodging.',
+          'Welcome meetup and group dinner.',
+          'Optional sunset viewpoint if timing allows.',
         ],
       },
       {
-        title: 'Day 2: Sunrise, Rim Trail & Viewpoints',
+        title: 'Day 2: Sunrise, South Rim & Viewpoints',
         points: [
           'Early sunrise viewpoint experience.',
+          'Explore South Rim viewpoints.',
           'Walk sections of the Rim Trail.',
-          'Visit major viewpoints along the South Rim.',
           'Group lunch and photography breaks.',
-          'Final dinner and social hangout.',
+          'Evening social gathering.',
         ],
       },
       {
-        title: 'Day 3: Final Views & Departure',
+        title: 'Day 3: Hiking, Scenic Stops & Group Time',
         points: [
-          'Relaxed morning breakfast.',
-          'Optional short scenic walk.',
-          'Group photos and friendship exchange.',
-          'Departure from Grand Canyon area.',
+          'Optional beginner-friendly canyon hike or scenic walk.',
+          'Visit Desert View area if route allows.',
+          'Group photo session.',
+          'Final dinner and campfire-style bonding.',
+        ],
+      },
+      {
+        title: 'Day 4: Final Views & Return',
+        points: [
+          'Breakfast and checkout.',
+          'Final viewpoint stop.',
+          'Depart Grand Canyon area.',
+          'Bus returns travelers to original pickup cities.',
         ],
       },
     ],
@@ -267,20 +345,37 @@ export default function TripDetails({ trip, onBack }) {
           {data.overview}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="p-6 bg-slate-50 rounded-2xl shadow">
             <h3 className="font-black text-xl mb-2">Duration</h3>
             <p>{data.duration}</p>
-        </div>
+          </div>
 
-        <div className="p-6 bg-slate-50 rounded-2xl shadow">
-           <h3 className="font-black text-xl mb-2">Trip Style</h3>
+          <div className="p-6 bg-slate-50 rounded-2xl shadow">
+            <h3 className="font-black text-xl mb-2">Price</h3>
+            <p>{data.price}</p>
+          </div>
+
+          <div className="p-6 bg-slate-50 rounded-2xl shadow">
+            <h3 className="font-black text-xl mb-2">Trip Style</h3>
             <p>{data.style}</p>
           </div>
         </div>
 
+        <h2 className="text-3xl md:text-4xl font-black mb-6">
+          Pickup Cities
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-4 mb-12">
+          {data.pickupCities.map((city) => (
+            <div key={city} className="p-4 bg-slate-50 rounded-xl text-center font-bold">
+              {city}
+            </div>
+          ))}
+        </div>
+
         <h2 className="text-3xl md:text-4xl font-black mb-8">
-          Detailed Itinerary
+          Detailed Round-Trip Itinerary
         </h2>
 
         <div className="space-y-8">
@@ -302,11 +397,11 @@ export default function TripDetails({ trip, onBack }) {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-4 text-slate-700">
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Social group experience</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Scenic viewpoints</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Beginner-friendly planning</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ Group photo moments</div>
-          <div className="p-4 bg-slate-50 rounded-xl">✓ New travel friendships</div>
+          <div className="p-4 bg-slate-50 rounded-xl">✓ Round-trip group travel</div>
+          <div className="p-4 bg-slate-50 rounded-xl">✓ Pickup from nearby cities</div>
+          <div className="p-4 bg-slate-50 rounded-xl">✓ Base camp social experience</div>
+          <div className="p-4 bg-slate-50 rounded-xl">✓ Planned hikes and scenic tours</div>
+          <div className="p-4 bg-slate-50 rounded-xl">✓ Campfire-style group bonding</div>
           <div className="p-4 bg-slate-50 rounded-xl">✓ Explore together and make new friends</div>
         </div>
       </div>
