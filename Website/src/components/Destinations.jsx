@@ -4,7 +4,7 @@ const destinations = [
     title: 'Yosemite National Park',
     location: 'California',
     image: '/Images/Yosemite.avif',
-    duration: '3 Days',
+    duration: '3 Days • 2 Nights',
     price: '$499',
   },
   {
@@ -12,7 +12,7 @@ const destinations = [
     title: 'Yellowstone National Park',
     location: 'Wyoming, Montana & Idaho',
     image: '/Images/Yellowstone.avif',
-    duration: '4 Days',
+    duration: '4 Days • 3 Nights',
     price: '$899',
   },
   {
@@ -20,7 +20,7 @@ const destinations = [
     title: 'Glacier National Park',
     location: 'Montana',
     image: '/Images/Glacier.avif',
-    duration: '4 Days',
+    duration: '4 Days • 3 Nights',
     price: '$799',
   },
   {
@@ -28,7 +28,7 @@ const destinations = [
     title: 'Zion National Park',
     location: 'Utah',
     image: '/Images/Zion.jpeg',
-    duration: '3 Days',
+    duration: '3 Days • 2 Nights',
     price: '$549',
   },
   {
@@ -36,7 +36,7 @@ const destinations = [
     title: 'Grand Canyon National Park',
     location: 'Arizona',
     image: '/Images/GrandCanyon.avif',
-    duration: '3 Days',
+    duration: '3 Days • 2 Nights',
     price: '$499',
   },
 ];
@@ -54,7 +54,7 @@ export default function Destinations({ onSelectTrip }) {
         </h2>
 
         <p className="text-center text-lg text-slate-600 max-w-3xl mx-auto mb-16">
-          Explore iconic destinations with like-minded travelers through social group adventures.
+          Explore iconic destinations with like-minded travelers and create unforgettable memories.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -70,22 +70,27 @@ export default function Destinations({ onSelectTrip }) {
               />
 
               <div className="p-6">
-                <p className="text-blue-700 font-bold mb-2">{item.location}</p>
+                <p className="text-blue-700 font-bold mb-2">
+                  {item.location}
+                </p>
 
-                <h3 className="text-2xl font-black mb-5">{item.title}</h3>
+                <h3 className="text-2xl font-black mb-5">
+                  {item.title}
+                </h3>
 
                 <div className="mb-6">
-                  <p className="text-xl font-black text-slate-900">
+                  <p className="text-lg font-black text-slate-900">
                     {item.duration}
                   </p>
-                  <p className="text-blue-700 font-bold">
-                    From {item.price}
+
+                  <p className="text-blue-700 text-2xl font-black">
+                    {item.price}
                   </p>
                 </div>
 
                 <button
                   onClick={() => onSelectTrip(item.slug)}
-                  className="px-5 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800 transition"
+                  className="w-full px-5 py-4 bg-blue-700 text-white rounded-xl font-bold hover:bg-blue-800 transition"
                 >
                   View Itinerary
                 </button>
