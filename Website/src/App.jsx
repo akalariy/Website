@@ -9,11 +9,25 @@ import TripDetails from './components/TripDetails';
 function App() {
   const [selectedTrip, setSelectedTrip] = useState(null);
 
+  const openTrip = (trip) => {
+    setSelectedTrip(trip);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  };
+
+  const closeTrip = () => {
+    setSelectedTrip(null);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  };
+
   if (selectedTrip) {
     return (
       <div className="min-h-screen bg-white text-slate-900">
         <Navbar />
-        <TripDetails trip={selectedTrip} onBack={() => setSelectedTrip(null)} />
+        <TripDetails trip={selectedTrip} onBack={closeTrip} />
       </div>
     );
   }
@@ -23,7 +37,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Destinations onSelectTrip={setSelectedTrip} />
+        <Destinations onSelectTrip={openTrip} />
         <HowItWorks />
         <Contact />
       </main>
