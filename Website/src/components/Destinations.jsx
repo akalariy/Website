@@ -5,7 +5,7 @@ const destinations = [
     location: 'California',
     image: '/Images/Yosemite.avif',
     duration: '4 Days • 3 Nights',
-    price: '$599',
+    price: 'Pricing Yet To Be Announced',
   },
   {
     slug: 'yellowstone',
@@ -13,7 +13,7 @@ const destinations = [
     location: 'Wyoming, Montana & Idaho',
     image: '/Images/Yellowstone.avif',
     duration: '6 Days • 5 Nights',
-    price: '$999',
+    price: 'Pricing Yet To Be Announced',
   },
   {
     slug: 'glacier',
@@ -21,7 +21,7 @@ const destinations = [
     location: 'Montana',
     image: '/Images/Glacier.avif',
     duration: '6 Days • 5 Nights',
-    price: '$949',
+    price: 'Pricing Yet To Be Announced',
   },
   {
     slug: 'zion',
@@ -29,7 +29,7 @@ const destinations = [
     location: 'Utah',
     image: '/Images/Zion.jpeg',
     duration: '5 Days • 4 Nights',
-    price: '$699',
+    price: 'Pricing Yet To Be Announced',
   },
   {
     slug: 'grand-canyon',
@@ -37,7 +37,7 @@ const destinations = [
     location: 'Arizona',
     image: '/Images/GrandCanyon.avif',
     duration: '4 Days • 3 Nights',
-    price: '$599',
+    price: 'Pricing Yet To Be Announced',
   },
 ];
 
@@ -79,7 +79,7 @@ export default function Destinations({ onSelectTrip }) {
                     {item.duration}
                   </p>
 
-                  <p className="text-blue-700 text-2xl font-black">
+                  <p className="text-blue-700 text-xl font-black">
                     {item.price}
                   </p>
                 </div>
